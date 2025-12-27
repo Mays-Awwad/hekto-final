@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.header{
+    background-image: url(../images/bird.webp);
+    background-size: cover;
+    height: 700px;
+    animation: changeBackgroundImage 12s infinite alternate
+}
+
+@keyframes changeBackgroundImage{
+   0%{
+    background-image: url(../images/bird.webp);
+
+   }
+   50%{
+    background-image: url(../images/sky.jpg);
+   }
+
+   10%{
+    background-image: url(../images/p3.webp);
+   }
+} 
+    
+.product{
+    width:200px;
+    height: 200px;
+    background-color: teal;
+    transition-property: width 2s,height 4s;
+   
+}
+
+.product:hover{
+    width:800px;
+    height:400px;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+
+
+}
+.child{
+    background-image: url(../images/safe.png);
+    background-size: cover;
+    width:200px;
+    height:200px;
+    box-shadow: 20px 10px 20px 30px red;
+}
+.child p {
+}
+
+h2{
+    color:teal;
+    text-shadow: 10px 10px red;
+}
+
+.footer{
+    background:linear-gradient(red,teal);
+    height:400px;
+    width:100%;
+}
